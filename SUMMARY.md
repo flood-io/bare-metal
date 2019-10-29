@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Introducing Flood Bare Metal](README.md)
-* [Getting Started \(linux\)](getting-started.md)
+* [Introducing Flood Bare Metal Agent](README.md)
+* [Getting Started \(macOS & linux\)](getting-started.md)
 * [Getting Started \(Windows\)](getting-started-windows.md)
+* [How it works](how-it-works.md)
 
 ## Configuration <a id="configuration-1"></a>
 
@@ -13,6 +14,7 @@
 
 ## Deployment
 
+* [Overview](deployment/overview.md)
 * [Running with systemd \(linux\)](deployment/running-with-systemd-linux.md)
 * [Running with NSSM \(Windows\)](deployment/running-with-nssm-windows.md)
 

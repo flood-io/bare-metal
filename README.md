@@ -1,10 +1,10 @@
-# Introducing Flood Bare Metal
+# Introducing Flood Bare Metal Agent
 
-Flood Bare Metal is a cross-platform agent for running Flood load generators on your own infrastructure.
+Flood Bare Metal Agent is a cross-platform agent for running [Flood](https://flood.io/) load generators on your own infrastructure.
 
-By running your own Flood Bare Metal agents, you can leverage existing infrastructure and load generator tuning expertise while at the same time benefitting from Flood's Data Collection Pipeline, and the familiar Flood UI and Analytics platform.
+By running your own Flood Bare Metal Agents, you can leverage existing infrastructure and load generator tuning expertise while at the same time benefitting from Flood's Data Collection Pipeline, and the familiar Flood UI and Analytics platform.
 
-Flood Bare Metal
+The Flood Bare Metal Agent:
 
 * Is a single binary which runs on right on your Linux, Windows or Mac machines.
 * Runs equally well on your own laptop for exploration or in your organization's datacenter for full scale load testing. 
@@ -21,6 +21,6 @@ Grab the latest binary for your platform from the [flood-agent releases page](ht
 
 * A machine running Linux, Windows 10 or MacOS
 * Network connection to the flood endpoints \(see [Getting Started](getting-started.md#firewall-preparation)\)
-* Either an installation of one of the supported tools \(JMeter, Gatling or Flood Element\)
+* Either an installation of one of the supported tools \(JMeter, Gatling or Flood Element\),
 * Or docker to use one of the flood load generator docker images.
 

@@ -1,12 +1,12 @@
 ---
-description: Follow these simple steps to get started trying out Flood Bare Metal.
+description: Follow these simple steps to start using Flood Bare Metal.
 ---
 
-# Getting Started \(linux\)
+# Getting Started \(macOS & linux\)
 
-For trying out the Flood Bare Metal agent follow these instructions to run a single instance on your own machine.
+In this guide we'll get Flood Bare Metal Agent running on your mac or linux computer.
 
-\(For production-scale installation see [Running with systemd \(linux\)](deployment/running-with-systemd-linux.md) \)
+The guide shows you how to run ad-hoc instances, suitable for exploration & prototyping floods. For production-scale installations see [Running with systemd \(linux\)](deployment/running-with-systemd-linux.md).
 
 ## Download
 
@@ -19,7 +19,8 @@ We recommend downloading the agent into its own directory:
 ```text
 mkdir -p ~/flood-bare-metal
 cd ~/flood-bare-metal
-curl -L https://.../flood-bare-metal-agent-linux-x64 > flood-agent
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.0/flood-agent-linux-1.0-beta.0 \
+    > flood-agent
 chmod 0755 ./flood-agent
 ```
 
