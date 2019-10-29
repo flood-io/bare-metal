@@ -22,13 +22,33 @@ Put `flood-jmeter.jar` and `json-simple.jar` in `$JMETER_HOME/lib/ext`
 
 ## Agent Configuration
 
-The minimal configuration is
+The minimal configuration is:
 
-```text
+{% tabs %}
+{% tab title="Linux & Mac" %}
+{% code-tabs %}
+{% code-tabs-item title="config.yaml" %}
+```yaml
 tools:
   jmeter:
     jmeter_home: /path/to/jmeter
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+{% endtab %}
+
+{% tab title="Windows" %}
+{% code-tabs %}
+{% code-tabs-item title="config.yaml" %}
+```yaml
+tools:
+  jmeter:
+    jmeter_home: C:\Path\To\Jmeter
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Additionally you can add additional JMeter and JVM parameters
 
