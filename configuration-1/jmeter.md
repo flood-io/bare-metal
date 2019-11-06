@@ -26,33 +26,25 @@ The minimal configuration is:
 
 {% tabs %}
 {% tab title="Linux & Mac" %}
-{% code-tabs %}
-{% code-tabs-item title="config.yaml" %}
-```yaml
+```
 tools:
   jmeter:
     jmeter_home: /path/to/jmeter
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="Windows" %}
-{% code-tabs %}
-{% code-tabs-item title="config.yaml" %}
-```yaml
+```
 tools:
   jmeter:
     jmeter_home: C:\Path\To\Jmeter
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 {% endtabs %}
 
 Additionally you can add additional JMeter and JVM parameters
 
-```text
+```
 tools:
   jmeter:
     jmeter_home: ~/tmp/jmeter
@@ -62,6 +54,19 @@ tools:
       testing=true
 
 ```
+
+## Using Docker
+
+For JMeter \(and all supported tools\) - there is the option to use our actual Flood Docker image if you do not wish to setup a local native tool binary install. Simply use the following properties in your `config.yaml` to let Flood know that you wish to use Flood's docker container for the respective load test tool instead of your own.
+
+```
+tools: 
+   flood-element: true 
+   gatling: true 
+   jmeter: true
+```
+
+
 
 
 

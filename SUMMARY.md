@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introducing Flood Bare Metal Agent](README.md)
-* [Getting Started \(macOS & linux\)](getting-started.md)
+* [Getting Started \(macOS & Linux\)](getting-started.md)
 * [Getting Started \(Windows\)](getting-started-windows.md)
 * [How it works](how-it-works.md)
 

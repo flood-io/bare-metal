@@ -16,7 +16,7 @@ _Please note:_ until the first official release please grab the latest _pre-rele
 
 We recommend downloading the agent into its own directory. For the guide, let's assume you've chosen to use `c:\flood-agent`:
 
-![](.gitbook/assets/flood-agent-windows-install%20%282%29.png)
+![](.gitbook/assets/flood-agent-windows-install%20%281%29.png)
 
 ## Firewall preparation
 
@@ -46,17 +46,13 @@ Your access token is the part after `access_token=`
 
 Create a configuration file `c:\flood-agent\config.yaml` with the following contents:
 
-{% code-tabs %}
-{% code-tabs-item title="config.yaml" %}
-```yaml
+```
 flood_api_token: flood_live_f100d1e9a8e # as grabbed above
 grid_name: windowsgrid1
 tools:
   jmeter:
     jmeter_home: C:\Path\To\JMeter
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 {% hint style="warning" %}
 If your `jmeter_home` path contains a space, make sure you escape it with a backslash `\` before each space.
@@ -66,7 +62,7 @@ If your `jmeter_home` path contains a space, make sure you escape it with a back
 
 In a console, run
 
-```text
+```
 cd c:\flood-agent
 flood-agent.exe --config config.yaml
 ```
@@ -83,7 +79,7 @@ Create a flood as normal \(or Start more like this\)
 
 progress through the steps until Step 6, where you'll choose `windowsgrid1` .
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image.png)
 
 Launch the test.
 

@@ -1,6 +1,6 @@
 # Running with systemd \(linux\)
 
-```text
+```
 [Unit]
 Description=Flood Agent
 Documentation=https://bare-metal.flood.io
