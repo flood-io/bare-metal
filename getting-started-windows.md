@@ -1,10 +1,12 @@
 ---
 description: >-
-  In this guide we'll get Flood Bare Metal Agent running on your Windows
-  computer.
+  This quick start guide will show you how to run Flood Bare Metal Agent on
+  Windows using your own machine.
 ---
 
 # Getting Started \(Windows\)
+
+## Download and Install
 
 The guide shows you how to run ad-hoc instances, suitable for exploration & prototyping floods. For production-scale installations see [Running with NSSM \(Windows\)](deployment/running-with-nssm-windows.md).
 
