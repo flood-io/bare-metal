@@ -48,13 +48,13 @@ Your access token is the part after `access_token=`
 
 Create a configuration file `c:\flood-agent\config.yaml` with the following contents:
 
+{% tabs %}
+{% tab title="config.yaml" %}
+```yaml
+flood_api_token: flood_live_f100d1e9a8e # as grabbed abovegrid_name: windowsgrid1tools:  jmeter:    jmeter_home: C:\Path\To\JMeter
 ```
-flood_api_token: flood_live_f100d1e9a8e # as grabbed above
-grid_name: windowsgrid1
-tools:
-  jmeter:
-    jmeter_home: C:\Path\To\JMeter
-```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 If your `jmeter_home` path contains a space, make sure you escape it with a backslash `\` before each space.
@@ -64,9 +64,8 @@ If your `jmeter_home` path contains a space, make sure you escape it with a back
 
 In a console, run
 
-```
-cd c:\flood-agent
-flood-agent.exe --config config.yaml
+```text
+cd c:\flood-agentflood-agent.exe --config config.yaml
 ```
 
 Your agent will start, outputting some informational logging. The agent is organised into the flood grid `windowsgrid1`

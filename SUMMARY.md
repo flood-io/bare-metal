@@ -17,4 +17,5 @@
 * [Overview](deployment/overview.md)
 * [Running with systemd \(linux\)](deployment/running-with-systemd-linux.md)
 * [Running with NSSM \(Windows\)](deployment/running-with-nssm-windows.md)
+* [Integrating with a web proxy](deployment/integrating-with-a-web-proxy.md)
 
