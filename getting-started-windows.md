@@ -85,7 +85,7 @@ Create a flood as normal \(or Start more like this\)
 
 progress through the steps until Step 6, where you'll choose `windowsgrid1` .
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%281%29.png)
 
 Launch the test.
 

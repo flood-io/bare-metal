@@ -19,3 +19,7 @@
 * [Running with NSSM \(Windows\)](deployment/running-with-nssm-windows.md)
 * [Integrating with a web proxy](deployment/integrating-with-a-web-proxy.md)
 
+## HOW-TOs <a id="how-to"></a>
+
+* [Setting up Flood Agent with Digital Ocean](how-to/setting-up-on-digital-ocean.md)
+
