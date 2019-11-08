@@ -19,7 +19,11 @@ Grab the latest binary for linux from the [flood-agent releases page](https://gi
 We recommend downloading the agent into its own directory:
 
 ```text
-mkdir -p ~/flood-bare-metalcd ~/flood-bare-metalcurl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.0/flood-agent-linux-1.0-beta.0 \    > flood-agentchmod 0755 ./flood-agent
+mkdir -p ~/flood-bare-metal
+cd ~/flood-bare-metal
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.0/flood-agent-linux-1.0-beta.0 \
+    > flood-agent
+chmod 0755 ./flood-agent
 ```
 
 ## Firewall preparation
@@ -47,7 +51,11 @@ You can use the in-built `configure`command to easily setup your `config.yaml`fi
 or you can create a configuration file `~/flood-agent/config.yaml` manually with the following structure and contents:
 
 ```text
-flood_api_token: flood_live_f100d1e9a8e # as grabbed abovegrid_name: mygrid1tools:  jmeter:    jmeter_home: /path/to/jmeter_home
+flood_api_token: flood_live_f100d1e9a8e # as grabbed above
+grid_name: mygrid1
+tools:
+  jmeter:
+    jmeter_home: /path/to/jmeter_home
 ```
 
 ## Run the agent

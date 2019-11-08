@@ -23,13 +23,17 @@ The minimal configuration is:
 {% tabs %}
 {% tab title="Linux & Mac" %}
 ```yaml
-tools:  jmeter:    jmeter_home: /path/to/jmeter
+tools:
+  jmeter:
+    jmeter_home: /path/to/jmeter
 ```
 {% endtab %}
 
 {% tab title="Windows" %}
 ```yaml
-tools:  jmeter:    jmeter_home: C:\Path\To\Jmeter
+tools:
+  jmeter:
+    jmeter_home: C:\Path\To\Jmeter
 ```
 {% endtab %}
 {% endtabs %}
@@ -37,7 +41,14 @@ tools:  jmeter:    jmeter_home: C:\Path\To\Jmeter
 Additionally you can add additional JMeter and JVM parameters:
 
 ```text
-tools:  jmeter:    jmeter_home: ~/tmp/jmeter    jvm_args: |      -Xms512m    jmeter_params: |      testing=true
+tools:
+  jmeter:
+    jmeter_home: ~/tmp/jmeter
+    jvm_args: |
+      -Xms512m
+    jmeter_params: |
+      testing=true
+
 ```
 
 ## Using Docker
@@ -45,13 +56,17 @@ tools:  jmeter:    jmeter_home: ~/tmp/jmeter    jvm_args: |      -Xms512m    jme
 {% tabs %}
 {% tab title="Linux & Mac" %}
 ```yaml
-tools:  jmeter:    jmeter_home: /path/to/jmeter
+tools:
+  jmeter:
+    jmeter_home: /path/to/jmeter
 ```
 {% endtab %}
 
 {% tab title="Windows" %}
 ```yaml
-tools:  jmeter:    jmeter_home: C:\Path\To\Jmeter
+tools:
+  jmeter:
+    jmeter_home: C:\Path\To\Jmeter
 ```
 {% endtab %}
 {% endtabs %}
@@ -59,7 +74,10 @@ tools:  jmeter:    jmeter_home: C:\Path\To\Jmeter
 For JMeter \(and all supported tools\) - there is the option to use our actual Flood Docker image if you do not wish to setup a local native tool binary install. Simply use the following properties in your `config.yaml` to let Flood know that you wish to use Flood's docker container for the respective load test tool instead of your own.
 
 ```text
-tools:    flood-element: true    gatling: true    jmeter: true
+tools: 
+   flood-element: true 
+   gatling: true 
+   jmeter: true
 ```
 
 

@@ -11,13 +11,15 @@ There are numerous instances where usage of a web proxy is mandatory in corporat
 **Linux, OS X, or Unix**
 
 ```text
-export HTTP_PROXY=http://[user]:[pass]@[proxy_ip]:[proxy_port]/export HTTPS_PROXY=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
+export HTTP_PROXY=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
+export HTTPS_PROXY=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
 ```
 
 **Windows**
 
 ```text
-setx http_proxy=http://[user]:[pass]@[proxy_ip]:[proxy_port]/setx https_proxy=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
+setx http_proxy=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
+setx https_proxy=http://[user]:[pass]@[proxy_ip]:[proxy_port]/
 ```
 
 Once this has been set - you can simply run the Flood Agent and it should adhere to the new `http_proxy` settings.

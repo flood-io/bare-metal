@@ -22,7 +22,9 @@ Verify that Gatling is able to be run from the command line by using `./gatling.
 The minimal configuration used for this is:
 
 ```text
-tools:     gatling:          gatling_home: ~/gatling-charts-highcharts-bundle-3.x.x-bundle
+tools:  
+   gatling:    
+      gatling_home: ~/gatling-charts-highcharts-bundle-3.x.x-bundle
 ```
 
 ## Using Docker
@@ -30,7 +32,10 @@ tools:     gatling:          gatling_home: ~/gatling-charts-highcharts-bundle-3.
 For Gatling \(and all supported tools\) - there is the option to use our actual Flood Docker image if you do not wish to setup a local native tool binary install. Simply use the following properties in your `config.yaml` to let Flood know that you wish to use Flood's docker container for the respective load test tool instead of your own.
 
 ```text
-tools:       flood-element: true       gatling: true       jmeter: true
+tools:    
+   flood-element: true    
+   gatling: true    
+   jmeter: true
 ```
 
 ​
