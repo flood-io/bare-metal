@@ -1,5 +1,5 @@
 ---
-description: Setting up and using JMeter with Flood Bare Metal
+description: Setting up and using JMeter with Flood Agent
 ---
 
 # JMeter

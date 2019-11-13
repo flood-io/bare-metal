@@ -1,13 +1,13 @@
 # Table of contents
 
-* [Introducing Flood Bare Metal Agent](README.md)
+* [Introducing Flood Agent](README.md)
 * [Getting Started \(macOS & Linux\)](getting-started.md)
 * [Getting Started \(Windows\)](getting-started-windows.md)
 * [How it works](how-it-works.md)
 
 ## Configuration <a id="configuration-1"></a>
 
-* [Configuring Flood Bare Metal](configuration-1/configuration.md)
+* [Configuring Flood Agent](configuration-1/configuration.md)
 * [JMeter](configuration-1/jmeter.md)
 * [Gatling](configuration-1/gatling.md)
 * [Flood Element](configuration-1/flood-element.md)

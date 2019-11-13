@@ -1,4 +1,4 @@
-# Configuring Flood Bare Metal
+# Configuring Flood Agent
 
 Agent configuration has three sources, applied in order of priority
 

@@ -1,5 +1,5 @@
 ---
-description: Setting up and using Gatling with Flood Bare Metal
+description: Setting up and using Gatling with Flood Agent
 ---
 
 # Gatling

@@ -1,5 +1,5 @@
 ---
-description: Setting up and using Flood Element with Flood Bare Metal Agent
+description: Setting up and using Flood Element with Flood Agent
 ---
 
 # Flood Element
