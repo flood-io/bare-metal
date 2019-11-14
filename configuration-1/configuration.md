@@ -1,22 +1,22 @@
 # Configuring Flood Agent
 
-There are a few different ways of configuring flood-agent though you don't need to know all of them. These options are provided to make life easier for advanced users and operations teams.
+There are a few different ways to configure flood-agent, though you definitely don't need to know them all in detail to start running load tests. These options are provided to make life easier for advanced users and operations teams.
 
 To get started, use the guided `flood-agent configure` configuration wizard, or drop a file called `config.yaml` file into the same directory as flood-agent.
 
-If you need it, the config system is fairly flexible. Read on below for details.
+If you need to take advantage of the more advanced configuration options, read on below for details.
 
 ## Configuration basics
 
 Agent configuration has three sources, applied in order of priority
 
-1. flags
+1. command line flags
 2. environment variables
 3. the configuration file
 
 Flags take highest precedence, followed by environment variables and then the config file.
 
-The different sources can each be useful in different automated configuration management approaches. 
+These different sources may each be useful in different automated configuration management approaches. 
 
 For example, you may choose to produce a base static configuration file for all agent installations, and override values on specific hosts using environment variables.
 

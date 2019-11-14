@@ -10,10 +10,6 @@ The guide shows you how to run ad-hoc instances, suitable for exploration & prot
 
 ## Download
 
-{% hint style="success" %}
-_PLEASE NOTE - until the first official release please grab the latest pre-release from_ [_https://github.com/flood-io/flood-agent/releases/_](https://github.com/flood-io/flood-agent/releases/tag/v1.0-beta.0)\_\_
-{% endhint %}
-
 Grab the latest binary for linux from the [flood-agent releases page](https://github.com/flood-io/flood-agent/releases/latest).
 
 We recommend downloading the agent into its own directory:

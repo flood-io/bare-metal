@@ -10,6 +10,8 @@ We suggest glancing at [How it works](../how-it-works.md) for an explanation of 
 
 The Flood Agent authenticates with your Flood account using an API token which can be retrieved from the following area when you are logged in to the Flood web application.
 
+[https://app.flood.io/account/user/security](https://app.flood.io/account/user/security)
+
 ![Using the API Access menu link with the Flood application - you are able to get the API token.](../.gitbook/assets/image%20%289%29.png)
 
 Simply copy/paste the API token shown as follows:

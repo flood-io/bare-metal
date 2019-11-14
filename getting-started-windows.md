@@ -12,10 +12,6 @@ The guide shows you how to run ad-hoc instances, suitable for exploration & prot
 
 ## Download
 
-{% hint style="info" %}
-_Please note:_ until the first official release please grab the latest _pre-release_ from the [GitHub Releases page](https://github.com/flood-io/flood-agent/releases/)
-{% endhint %}
-
 We recommend downloading the agent into its own directory. For the guide, let's assume you've chosen to use `c:\flood-agent`:
 
 ![](.gitbook/assets/flood-agent-windows-install%20%281%29.png)

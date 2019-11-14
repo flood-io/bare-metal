@@ -52,7 +52,7 @@ tools:
     jvm_args: |
       -Xms512m
     jmeter_params: |
-      testing=true
+      -Jtesting=true
 
 ```
 

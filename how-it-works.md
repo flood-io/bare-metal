@@ -8,11 +8,11 @@ description: An eagle's eye overview of how Flood Agent works
 
 ### Grids
 
-A "grid" is a group of flood agents running on any type of computer \(for example a laptop or a cloud-managed VM instance\).
+A **grid** is a group of flood agents running on any type of computer \(for example a laptop or a cloud-managed VM instance\).
 
 #### Agents with the same name are part of the same grid
 
-If you're working on a single machine \(your laptop for example\) you can let flood-agent pick a random name like `submerged-dolphin`
+If you're working on a single machine \(your laptop for example\) you can let `flood-agent` pick a random name like `submerged-dolphin`
 
 ![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-13-52-19.png)
 
@@ -36,7 +36,7 @@ aws-ec2-2 $ ./flood-agent --name aws-grid-1
 
 #### Machines running in the same Grid should be homogeneous \(though it isn't mandatory\)
 
-For example, using a laptop and an extra-large VM instance as part of the same grid would make test results difficult to interpret and trust.
+For example, using a laptop on home a broadband connection and an extra-large VM instance located in a cloud provider's datacenter as part of the same grid would make test results difficult to interpret and trust.
 
 ### Floods
 
