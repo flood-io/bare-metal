@@ -1,7 +1,7 @@
 ---
 description: >-
-  This quick start guide will show you how to run Flood Bare Metal Agent on
-  Windows using your own machine.
+  This quick start guide will show you how to run Flood Agent on Windows using
+  your own machine.
 ---
 
 # Getting Started \(Windows\)
@@ -20,39 +20,22 @@ We recommend downloading the agent into its own directory. For the guide, let's 
 
 ![](.gitbook/assets/flood-agent-windows-install%20%281%29.png)
 
-## Firewall preparation
-
-Ensure that your machine has network access to the following endpoints 
-
-* https://drain.flood.io
-* https://beacon.flood.io
-* https://vault.flood.io
-* https://flood-archives.s3-accelerate.amazonaws.com
-* https://logs.us-east-1.amazonaws.com
-* https://sns.\*.amazonaws.com
-* https://sqs.\*.amazonaws.com
-
-On Windows you may also have to allow processes access to the outside world when a Flood starts.
-
 ## Flood API Token
 
 Grab your Flood API token from [https://app.flood.io/account/user/security](https://app.flood.io/account/user/security)
 
 ![Flood Security Settings Page](.gitbook/assets/flood-access-token.png)
 
-{% hint style="info" %}
-Your access token is the part after `access_token=`
-{% endhint %}
-
 ## Configure the agent
 
-Create a configuration file `c:\flood-agent\config.yaml` with the following contents:
+The simplest method for creating a configuration file is the guided `flood-agent.exe configure` wizard.
+
+Otherwise, create a configuration file yourself at `c:\flood-agent\config.yaml`  with the following contents:
 
 {% tabs %}
 {% tab title="config.yaml" %}
 ```yaml
 flood_api_token: flood_live_f100d1e9a8e # as grabbed above
-grid_name: windowsgrid1
 tools:
   jmeter:
     jmeter_home: C:\Path\To\JMeter
@@ -64,22 +47,59 @@ tools:
 If your `jmeter_home` path contains a space, make sure you escape it with a backslash `\` before each space.
 {% endhint %}
 
+{% hint style="warning" %}
+Support for running load generators as Docker containers on Windows is under development but is not yet available.
+{% endhint %}
+
+## Check your configuration
+
+Next, check the configuration:
+
+```text
+.\flood-agent.exe check
+
+~# Flood Agent #~ : configuration checker
+[>] config read from c:\flood-agent\config.yaml
+
+==> Checking Flood API
+[√] api token - ok
+
+==> Checking tools
+[√] jmeter - ok
+[ ] no gatling config
+[ ] no flood-element config
+
+==> Checking network
+[√] AWS S3 Archives endpoint - connectivity ok
+[√] Flood configuration service - connectivity ok
+[√] Flood data pipeline ingress - connectivity ok
+[√] Flood status service - connectivity ok
+[√] AWS sns endpoint in us-east-1 - connectivity ok
+[√] AWS sqs endpoint in us-east-1 - connectivity ok
+```
+
+If you're running `flood-agent` from within a corporate network, you may need to perform additional steps to get started. For more information, please see the [Networking](deployment/networking.md) page.
+
 ## Run the agent
 
 In a console, run
 
 ```text
 cd c:\flood-agent
-flood-agent.exe --config config.yaml
+flood-agent.exe --grid windowsgrid1
 ```
 
 Your agent will start, outputting some informational logging. The agent is organised into the flood grid `windowsgrid1`
 
+{% hint style="success" %}
 If you perform the above on a second machine, your grid `windowsgrid1` will now have two nodes. Any floods scheduled onto `windowsgrid1` will now run on both machines.
+{% endhint %}
+
+For more information on how it works, please see [How it works](how-it-works.md).
 
 ## Run a flood
 
-Create a flood as normal \(or Start more like this\)
+Visit https://app.flood.io and create a flood as normal \(or _Start more like this_\)
 
 ![](.gitbook/assets/test-step-1.png)
 
@@ -89,11 +109,9 @@ progress through the steps until Step 6, where you'll choose `windowsgrid1` .
 
 Launch the test.
 
-### Shut down and cleanup
+### Shutting down
 
-{% hint style="success" %}
-There are no manual cleanup steps required.
-{% endhint %}
+Your Flood Agent instance will check in every few seconds to notify Flood that it is alive. If you stop the process or disconnect from the internet/close your laptop, it will be removed from Flood after 1 minute. 
 
-Your Flood Agent instance will check in every few seconds to notify Flood that it is alive. If you stop the process or disconnect from the internet/close your laptop, it will be removed from Flood after 1 minute. You can reconnect it at any time.
+You can reconnect it at any time.
 

@@ -13,14 +13,12 @@ The Flood Agent:
 
 ## Download
 
-_Please note:_ until the first official release please grab the latest pre-release from [https://github.com/flood-io/flood-agent/releases/](https://github.com/flood-io/flood-agent/releases/tag/v1.0-beta.0)
-
 Grab the latest binary for your platform from the [flood-agent releases page](https://github.com/flood-io/flood-agent/releases/latest).
 
 ## Requirements
 
 * A machine running Linux, Windows 10 or MacOS
 * Network connection to the flood endpoints \(see [Getting Started](getting-started.md#firewall-preparation)\)
-* Either an installation of one of the supported tools \(JMeter, Gatling or Flood Element\),
+* Either an installation of one of the supported tools \(JMeter, Gatling\),
 * Or docker to use one of the flood load generator docker images.
 

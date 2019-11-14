@@ -3,7 +3,7 @@
 ```text
 [Unit]
 Description=Flood Agent
-Documentation=https://bare-metal.flood.io
+Documentation=https://agent.flood.io
 After=syslog.target
 After=network.target
 

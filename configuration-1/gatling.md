@@ -11,9 +11,38 @@ description: Setting up and using Gatling with Flood Agent
 
 ## ‌Installation
 
-‌Install Gatling by downloading and extracting the `gatling-charts-highcharts-bundle-3.x.x-bundle.zip` file onto your node.‌
+### All in one bundle
 
-Verify that Gatling is able to be run from the command line by using `./gatling.sh` from the Gatling `bin` directory. If you are able to run the default example `computerdatabase.BasicSimulation` then you have successfully setup the tool!
+The simplest way to run Gatling is to use our all in one bundle.
+
+* install Java JRE 8+
+* download the latest bundle from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* unzip the bundle to e.g. `~/flood-gatling`
+
+### Flood Gatling Plugin
+
+If you already have Gatling installed, you only need to add the Flood Gatling Plugin jars to start testing with Flood
+
+{% hint style="warning" %}
+Note that flood-gatling minimally modifies your Gatling installation. You may wish to take a copy of `$GATLING_HOME` before adding flood-gatling
+{% endhint %}
+
+* download the latest flood-gatling zip from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* unzip & move the jars into `$GATLING_HOME/lib`
+* edit `$GATLING_HOME/conf/gatling.conf`
+
+{% tabs %}
+{% tab title="conf/gatling.conf" %}
+```text
+gatling {
+  ...  
+  data {
+    writers = [file, flood] # add flood to the list of writers
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Agent Configuration <a id="agent-configuration"></a>
 
@@ -24,10 +53,10 @@ The minimal configuration used for this is:
 ```text
 tools:  
    gatling:    
-      gatling_home: ~/gatling-charts-highcharts-bundle-3.x.x-bundle
+      gatling_home: /path/to/gatling
 ```
 
-## Using Docker
+## Using Docker \(linux & macOS only\)
 
 For Gatling \(and all supported tools\) - there is the option to use our actual Flood Docker image if you do not wish to setup a local native tool binary install. Simply use the following properties in your `config.yaml` to let Flood know that you wish to use Flood's docker container for the respective load test tool instead of your own.
 

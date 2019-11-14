@@ -12,9 +12,19 @@ A "grid" is a group of flood agents running on any type of computer \(for exampl
 
 #### Agents with the same name are part of the same grid
 
-If you're working on a single machine \(your laptop for example\) you can let flood-agent pick a random name.
+If you're working on a single machine \(your laptop for example\) you can let flood-agent pick a random name like `submerged-dolphin`
 
-If you're organising a larger grid on your own cluster of servers, pick a name to associate the nodes together.
+![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-13-52-19.png)
+
+Say you'd like to run a larger grid. You could run `flood-agent` on a second machine
+
+```text
+./flood-agent --grid submerged-dolphin
+```
+
+However, in this case it'd just be easier to start both agents with a grid name of your choosing:
+
+![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-13-56-08.png)
 
 ```text
 # ec2 instance 1
@@ -26,11 +36,15 @@ aws-ec2-2 $ ./flood-agent --name aws-grid-1
 
 #### Machines running in the same Grid should be homogeneous \(though it isn't mandatory\)
 
-e.g. using a laptop and an extra-large VM instance would make test results difficult to interpret / trust.
+For example, using a laptop and an extra-large VM instance as part of the same grid would make test results difficult to interpret and trust.
 
 ### Floods
 
-A flood is an instance of a load test. It is scheduled onto one or more grids.
+A **flood** is an instance of a load **test plan**. To run a load test, a **flood** is scheduled onto one or more **grids**. 
 
-&lt;TODO screenshot of a flood in the ui&gt;
+So, when you run a **flood**, it ends up running on all the `flood-agent` instances running within the **grids** you have organised and selected:
+
+![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-14-26-23.png)
+
+
 

@@ -4,17 +4,22 @@ description: Setting up and using JMeter with Flood Agent
 
 # JMeter
 
-## Requirements
-
 ## Installation
 
-* Java 8
-* JMeter [https://jmeter.apache.org/download\_jmeter.cgi](https://jmeter.apache.org/download_jmeter.cgi)
-* Flood JMeter Plugin jar
+### All in one bundle
 
-1. Install Java and JMeter as-per instructions  [https://jmeter.apache.org/download\_jmeter.cgi](https://jmeter.apache.org/download_jmeter.cgi).
-2. Download the latest `flood-jmeter.jar` and `json-simple.jar` from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).  \(Again, until we have an official release, please look for the latest pre-release: [https://github.com/flood-io/flood-agent/releases](https://github.com/flood-io/flood-agent/releases)\) 
-3. Copy `flood-jmeter.jar` and `json-simple.jar` to `$JMETER_HOME/lib/ext`
+The simplest way to run JMeter is to use our all in one bundle.
+
+* install Java JRE 8+
+* download the latest bundle from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* unzip the bundle to e.g. `~/flood-jmeter`
+
+### Flood JMeter Plugin
+
+If you already have JMeter installed, you only need to add the Flood JMeter Plugin to start testing with Flood
+
+* download the latest flood-jmeter jar from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* copy `flood-jmeter.jar`  to `$JMETER_HOME/lib/ext`
 
 ## Agent Configuration
 
@@ -51,7 +56,7 @@ tools:
 
 ```
 
-## Using Docker
+## Using Docker \(linux & macOS only\)
 
 {% tabs %}
 {% tab title="Linux & Mac" %}
