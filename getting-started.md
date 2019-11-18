@@ -10,17 +10,35 @@ The guide shows you how to run ad-hoc instances, suitable for exploration & prot
 
 ## Download
 
-Grab the latest binary for linux from the [flood-agent releases page](https://github.com/flood-io/flood-agent/releases/latest).
+Grab the latest binary for your platform from the [flood-agent releases page](https://github.com/flood-io/flood-agent/releases/latest).
 
-We recommend downloading the agent into its own directory:
+We recommend downloading the agent into its own directory.
 
+Once the binary has been downloaded, make sure that you make it executable.
+
+To download `flood-agent` using the terminal you could use the following example series of commands:
+
+{% tabs %}
+{% tab title="macOS" %}
 ```text
 mkdir -p ~/flood-agent
 cd ~/flood-agent
-curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.0/flood-agent-linux-1.0-beta.0 \
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.10/flood-agent-darwin-1.0-beta.10 \
     > flood-agent
 chmod 0755 ./flood-agent
 ```
+{% endtab %}
+
+{% tab title="Linux" %}
+```
+mkdir -p ~/flood-agent
+cd ~/flood-agent
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.10/flood-agent-linux-1.0-beta.10 \
+    > flood-agent
+chmod 0755 ./flood-agent
+```
+{% endtab %}
+{% endtabs %}
 
 ## Flood API token
 
