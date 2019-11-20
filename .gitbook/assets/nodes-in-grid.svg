@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="2209.5 484 300.8443 354.5" width="300.8443" height="354.5">
+  <defs>
+    <font-face font-family="Open Sans" font-size="29" panose-1="2 11 7 6 3 8 4 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="540.03906" cap-height="713.8672" ascent="1068.8477" descent="-292.96875" font-weight="600">
+      <font-face-src>
+        <font-face-name name="OpenSans-SemiBold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Open Sans" font-size="18" panose-1="2 11 8 6 3 5 4 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="545.89844" cap-height="713.8672" ascent="1068.8477" descent="-292.96875" font-weight="700">
+      <font-face-src>
+        <font-face-name name="OpenSans-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Open Sans" font-size="16" panose-1="2 11 6 6 3 5 4 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="535.15625" cap-height="713.8672" ascent="1068.8477" descent="-292.96875" font-weight="400">
+      <font-face-src>
+        <font-face-name name="OpenSans-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Open Sans" font-size="16" panose-1="2 11 6 6 3 5 4 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="-750" x-height="535.15625" cap-height="713.8672" ascent="1068.8477" descent="-292.96875" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="OpenSans-Italic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Open Sans" font-size="16" panose-1="2 11 8 6 3 5 4 2 2 4" units-per-em="1000" underline-position="-75.19531" underline-thickness="49.80469" slope="0" x-height="545.89844" cap-height="713.8672" ascent="1068.8477" descent="-292.96875" font-weight="700">
+      <font-face-src>
+        <font-face-name name="OpenSans-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.8.2 
+    <dc:date>2019-11-20 06:03:06 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_3" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 3</title>
+    <rect fill="white" x="2209.5" y="484" width="300.8443" height="354.5"/>
+    <g id="Canvas_3: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_419">
+        <rect x="2211" y="530" width="267.67763" height="307" stroke="#ff2647" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g id="Group_416">
+        <g id="Graphic_418">
+          <rect x="2241.0943" y="564" width="100" height="100" fill="#ececee"/>
+          <rect x="2241.0943" y="564" width="100" height="100" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_417">
+          <rect x="2256.0943" y="579" width="70" height="70" fill="#4286c5"/>
+          <text transform="translate(2261.0943 594.5)" fill="white">
+            <tspan font-family="Open Sans" font-size="29" font-weight="600" fill="white" x="8.342041" y="31">M5</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_415">
+        <text transform="translate(2267.1776 490)" fill="#f90">
+          <tspan font-family="Open Sans" font-size="18" font-weight="700" fill="#f90" x=".4995117" y="19">AWS EC2 Instances</tspan>
+        </text>
+      </g>
+      <g id="Graphic_414">
+        <text transform="translate(2368.6776 592)" fill="black">
+          <tspan font-family="Open Sans" font-size="16" font-weight="400" fill="black" x="0" y="17">grid name</tspan>
+          <tspan font-family="Open Sans" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="39">aws-grid-1</tspan>
+        </text>
+      </g>
+      <g id="Group_411">
+        <g id="Graphic_413">
+          <rect x="2241.0943" y="700.5" width="100" height="100" fill="#ececee"/>
+          <rect x="2241.0943" y="700.5" width="100" height="100" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_412">
+          <rect x="2256.0943" y="715.5" width="70" height="70" fill="#4286c5"/>
+          <text transform="translate(2261.0943 731)" fill="white">
+            <tspan font-family="Open Sans" font-size="29" font-weight="600" fill="white" x="8.342041" y="31">M5</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_410">
+        <text transform="translate(2368.6776 728.5)" fill="black">
+          <tspan font-family="Open Sans" font-size="16" font-weight="400" fill="black" x="0" y="17">grid name</tspan>
+          <tspan font-family="Open Sans" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="39">aws-grid-1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_409">
+        <path d="M 2479.511 528.5 L 2507.511 528.5 L 2507.511 646.5 L 2480.011 674 Z" fill="#ff2647"/>
+      </g>
+      <g id="Graphic_408">
+        <text transform="translate(2482.8443 634.5) rotate(-90)" fill="white">
+          <tspan font-family="Open Sans" font-size="16" font-weight="700" fill="white" x="2.4726562" y="17">aws-grid-1 </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

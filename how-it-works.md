@@ -14,7 +14,7 @@ A **grid** is a group of flood agents running on any type of computer \(for exam
 
 If you're working on a single machine \(your laptop for example\) you can let `flood-agent` pick a random name like `submerged-dolphin`
 
-![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-13-52-19.png)
+![](.gitbook/assets/node%20%281%29.svg)
 
 Say you'd like to run a larger grid. You could run `flood-agent` on a second machine
 
@@ -24,7 +24,7 @@ Say you'd like to run a larger grid. You could run `flood-agent` on a second mac
 
 However, in this case it'd just be easier to start both agents with a grid name of your choosing:
 
-![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-13-56-08.png)
+![](.gitbook/assets/nodes-in-grid.svg)
 
 ```text
 # ec2 instance 1
@@ -44,7 +44,9 @@ A **flood** is an instance of a load **test plan**. To run a load test, a **floo
 
 So, when you run a **flood**, it ends up running on all the `flood-agent` instances running within the **grids** you have organised and selected:
 
-![](.gitbook/assets/grid-architecture-canvas-3-2019-11-14-14-26-23.png)
+![To run a flood, define it with the Stream Editor and decide with grids to target. Once you hit &quot;Launch&quot; flood.io queues your flood to run on the correct nodes.](.gitbook/assets/canvas-3.svg)
+
+![A &quot;node&quot; runs two main processes flood-agent and a load generator.](.gitbook/assets/ga.png)
 
 
 
