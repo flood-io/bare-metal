@@ -44,7 +44,7 @@ A **flood** is an instance of a load **test plan**. To run a load test, a **floo
 
 So, when you run a **flood**, it ends up running on all the `flood-agent` instances running within the **grids** you have organised and selected:
 
-![To run a flood, define it with the Stream Editor and decide with grids to target. Once you hit &quot;Launch&quot; flood.io queues your flood to run on the correct nodes.](.gitbook/assets/canvas-3.svg)
+![To run a load test, define a flood with the Stream Editor. As the last step, decide on which grids your test should run. Once you hit &quot;Launch&quot; flood.io ensures your load test runs on the correct machines.](.gitbook/assets/canvas-3.svg)
 
 ![A &quot;node&quot; runs two main processes flood-agent and a load generator.](.gitbook/assets/ga.png)
 
