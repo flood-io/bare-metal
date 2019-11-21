@@ -2,7 +2,7 @@
 description: Setting up and using Gatling with Flood Agent
 ---
 
-# Gatling
+# Configuring Gatling
 
 ## Requirements <a id="requirements"></a>
 

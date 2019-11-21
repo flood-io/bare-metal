@@ -14,12 +14,12 @@ A **grid** is a group of flood agents running on any type of computer \(for exam
 
 If you're working on a single machine \(your laptop for example\) you can let `flood-agent` pick a random name like `submerged-dolphin`
 
-![](.gitbook/assets/node%20%281%29.svg)
+![](.gitbook/assets/node%20%282%29.svg)
 
 Say you'd like to run a larger grid. You could run `flood-agent` on a second machine
 
 ```text
-./flood-agent --grid submerged-dolphin
+flood-agent --grid submerged-dolphin
 ```
 
 However, in this case it'd just be easier to start both agents with a grid name of your choosing:

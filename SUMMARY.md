@@ -1,15 +1,20 @@
 # Table of contents
 
 * [Introducing Flood Agent](README.md)
-* [Getting Started \(macOS & Linux\)](getting-started.md)
-* [Getting Started \(Windows\)](getting-started-windows.md)
+* [Getting Started on Linux](getting-started.md)
+* [Getting Started on macOS](getting-started-on-macos.md)
+* [Getting Started on Windows](getting-started-windows.md)
+* [Getting Started - Docker](getting-started-docker.md)
+* [Getting Started - Local JMeter & Gatling](getting-started-local-jmeter-and-gatling.md)
+* [Running a Flood](running-a-flood-on-your-grid.md)
+* [Shutting down](shutting-down.md)
 * [How it works](how-it-works.md)
 
 ## Configuration <a id="configuration-1"></a>
 
 * [Configuring Flood Agent](configuration-1/configuration.md)
-* [JMeter](configuration-1/jmeter.md)
-* [Gatling](configuration-1/gatling.md)
+* [Configuring JMeter](configuration-1/jmeter.md)
+* [Configuring Gatling](configuration-1/gatling.md)
 
 ## Deployment
 
