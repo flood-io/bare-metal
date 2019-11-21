@@ -1,7 +1,5 @@
 ---
-description: >-
-  This quick start guide will show you how to run Flood Agent on Windows using
-  your own machine.
+description: Follow these steps to start using Flood Agent on Windows
 ---
 
 # Getting Started on Windows
@@ -12,14 +10,24 @@ The guide shows you how to run ad-hoc instances, suitable for exploration & prot
 
 ## Download
 
-We recommend downloading the agent into its own directory. For the guide, let's assume you've chosen to use `c:\flood-agent`:
+Grab the latest binary from the [Flood Agent Releases page](https://github.com/flood-io/flood-agent/releases/latest). We recommend downloading the agent into its own directory.
 
-![](.gitbook/assets/flood-agent-windows-install%20%281%29.png)
+Download: [flood-agent v1.0 64bit for Windows](https://github.com/flood-io/flood-agent/releases/download/v1.0/flood-agent-v1.0-windows-64bit.exe)
+
+For the guide, let's assume you've chosen to use `c:\flood-agent`:
+
+![](.gitbook/assets/windows-flood-agent-download.png)
+
+{% hint style="info" %}
+In the guide we refer to`flood-agent.exe` but when you download it the file name will look like `flood-agent-v1.0-windows-64bit.exe`. 
+
+The actual name of the binary doesn't matter, so please either rename the binary to `flood-agent.exe` or substitute the filename given in the examples.
+{% endhint %}
 
 {% hint style="success" %}
 In the console, to run a binary from the current directory, don't forget the `.\`
 
-For example, to run Flood Agent: `.\flood-agent.exe`
+For example, to run Flood Agent it would be`.\flood-agent.exe`
 {% endhint %}
 
 ## Preparing the load generator

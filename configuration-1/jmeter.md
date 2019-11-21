@@ -11,15 +11,15 @@ description: Setting up and using JMeter with Flood Agent
 The simplest way to run JMeter is to use our all in one bundle.
 
 * install Java JRE 8+
-* download the latest bundle from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* download the latest bundle: [flood-jmeter-bundle-5.1.1.zip](https://flood-binaries.s3-accelerate.amazonaws.com/flood-jmeter/canary/5.1.1/flood-jmeter-bundle-5.1.1.zip)
 * unzip the bundle to e.g. `~/flood-jmeter`
 
 ### Flood JMeter Plugin
 
 If you already have JMeter installed, you only need to add the Flood JMeter Plugin to start testing with Flood
 
-* download the latest flood-jmeter jar from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
-* copy `flood-jmeter.jar`  to `$JMETER_HOME/lib/ext`
+* download the latest Flood JMeter jar: [flood-jmeter-5.1.1.jar](https://flood-binaries.s3-accelerate.amazonaws.com/flood-jmeter/canary/5.1.1/flood-jmeter-5.1.1.jar).
+* copy `flood-jmeter-5.1.1.jar`  to the JMeter extensions directory \(i.e. `$JMETER_HOME/lib/ext`\)
 
 ## Agent Configuration
 

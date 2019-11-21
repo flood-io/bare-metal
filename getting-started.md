@@ -1,5 +1,5 @@
 ---
-description: Follow these simple steps to start using Flood Agent
+description: Follow these steps to start using Flood Agent on Linux
 ---
 
 # Getting Started on Linux
@@ -12,12 +12,14 @@ The guide shows you how to run ad-hoc instances, suitable for exploration & prot
 
 Grab the latest binary from the [Flood Agent Releases page](https://github.com/flood-io/flood-agent/releases/latest). We recommend downloading the agent into its own directory. Once the binary has been downloaded, make it executable.
 
+Download: [flood-agent v1.0 64bit for linux](https://github.com/flood-io/flood-agent/releases/download/v1.0/flood-agent-v1.0-linux-64bit)
+
 Here are the steps above as you might use them via the terminal:
 
 ```text
 mkdir -p ~/flood-agent
 cd ~/flood-agent
-curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.11/flood-agent-v1.0-beta.11-linux-64bit \
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0/flood-agent-v1.0-linux-64bit \
     > flood-agent
 chmod +x ./flood-agent
 ```

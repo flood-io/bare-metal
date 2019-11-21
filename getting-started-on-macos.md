@@ -1,3 +1,7 @@
+---
+description: Follow these steps to start using Flood Agent on macOS
+---
+
 # Getting Started on macOS
 
 In this guide we'll get Flood Agent running on your macOS computer.
@@ -8,16 +12,14 @@ The guide shows you how to run ad-hoc instances, suitable for exploration and pr
 
 Grab the latest binary from the [Flood Agent Releases page](https://github.com/flood-io/flood-agent/releases/latest). We recommend downloading the agent into its own directory. Once the binary has been downloaded, make it executable.
 
-{% hint style="warning" %}
-Flood Agent is pre-release software. Please select the latest release from the releases page and download the `flood-agent` macos binary under the **Assets** heading. Upon release we will update this page with a direct link to the correct binary.
-{% endhint %}
+Download: [flood-agent v1.0 for macOS](https://github.com/flood-io/flood-agent/releases/download/v1.0/flood-agent-v1.0-macos-64bit)
 
 Here are the steps above as you might use them via the terminal:
 
 ```text
 mkdir -p ~/flood-agent
 cd ~/flood-agent
-curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0-beta.11/flood-agent-v1.0-beta.11-macos-64bit \
+curl -L https://github.com/flood-io/flood-agent/releases/download/v1.0/flood-agent-v1.0-macos-64bit \
     > flood-agent
 chmod +x ./flood-agent
 ```
@@ -54,9 +56,9 @@ Alternatively, using a locally installed load generator is a good option to
 
 Using `flood-agent` on macOS Catalina requires a workaround for the new "notarization" feature.
 
-Notarization is designed to protect Mac users from malicious software. While we support this initiative, it will take us some time to integrate with `flood-agent`. Until then, please follow these steps when getting started.
+Notarization is designed to protect Mac users from malicious software. While we support this initiative, it will take us some time to integrate with `flood-agent`. Until then, please follow these steps when first running the agent.
 
-For more information about notarization please see the [Apple documentation](https://support.apple.com/en-us/HT202491).
+For more information about notarization please see [Apple's documentation](https://support.apple.com/en-us/HT202491).
 
 1. When you first run `flood-agent` you'll see a dialog like this:
 
@@ -74,7 +76,7 @@ For more information about notarization please see the [Apple documentation](htt
 
 ![](.gitbook/assets/r-flood-agent-allow-anyway.png)
 
-5. Run `flood-agent` again and you should see another dialogue like this:
+5. Run `flood-agent` again and you should see another dialog like this:
 
 ![](.gitbook/assets/r-flood-agent-open-again.png)
 

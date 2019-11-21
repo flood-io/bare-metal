@@ -4,11 +4,6 @@ description: Setting up and using Gatling with Flood Agent
 
 # Configuring Gatling
 
-## Requirements <a id="requirements"></a>
-
-* Java 8
-* Gatling [https://gatling.io/open-source](https://gatling.io/open-source)
-
 ## ‌Installation
 
 ### All in one bundle
@@ -16,18 +11,18 @@ description: Setting up and using Gatling with Flood Agent
 The simplest way to run Gatling is to use our all in one bundle.
 
 * install Java JRE 8+
-* download the latest bundle from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* download the latest bundle: [flood-gatling-bundle-3.3.1.zip](https://flood-binaries.s3-accelerate.amazonaws.com/flood-gatling/canary/3.3.1/flood-gatling-bundle-3.3.1.zip).
 * unzip the bundle to e.g. `~/flood-gatling`
 
 ### Flood Gatling Plugin
 
-If you already have Gatling installed, you only need to add the Flood Gatling Plugin jars to start testing with Flood
+If you already have Gatling installed, you only need to add the Flood Gatling Plugin jars to start testing with Flood.
 
 {% hint style="warning" %}
 Note that flood-gatling minimally modifies your Gatling installation. You may wish to take a copy of `$GATLING_HOME` before adding flood-gatling
 {% endhint %}
 
-* download the latest flood-gatling zip from the [flood-agent release page](https://github.com/flood-io/flood-agent/releases/latest).
+* download the latest flood-gatling zip: [flood-gatling-jars-3.3.1.zip](https://flood-binaries.s3-accelerate.amazonaws.com/flood-gatling/canary/3.3.1/flood-gatling-jars-3.3.1.zip)
 * unzip & move the jars into `$GATLING_HOME/lib`
 * edit `$GATLING_HOME/conf/gatling.conf`
 
