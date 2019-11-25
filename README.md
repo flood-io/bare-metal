@@ -15,7 +15,7 @@ Flood Agent:
 
 * A machine running Linux, Windows 10 or MacOS
 * Network connection to the flood endpoints \(see [Networking](deployment/networking.md)\)
-* A Flood account - you can sign up [for a free trial](https://flood.io/load-performance-testing-tool/free-load-testing-trial/)
+* A Flood account - you can sign up [for a free trial](https://app.flood.io/sign-up)
 * Either an installation of one of the supported tools \(JMeter, Gatling\), or Docker to use one of Flood's load generator images.
 
 ## Get started
